@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movieJs</title>
+    <!-- movieJs favicon -->
+    <link rel="icon" type="image/x-icon" href="./image/logo.png">
+    <!-- google Font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;400&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap CSS link -->
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <!-- fontawesome CSS link -->
+    <link rel="stylesheet" href="./css/fontawesome/all.min.css">
+    <!-- responsive CSS link -->
+    <link rel="stylesheet" href="./css/responsive.css">
+    <!-- style CSS link -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Loader area start -->
+    <div class="loader main-color justify-content-center align-items-center">
+        <img src="./image/loader.png" alt="loader">
+    </div>
+    <!-- Loader area end -->
+    
+    <!-- Header area start -->
+    <header>
+        <nav class="navbar navbar-expand-lg position-fixed w-100 py-3">
+            <div class="container-fluid">
+                <!-- Logo start -->
+                <a class="navbar-brand text-white d-flex align-items-center" href="#home">
+                    <img src="./image/logo.png" alt="logo" width="30" height="24">
+                    <h2 class="fw-bold ms-1">MovieMO</h2>
+                </a>
+                <!-- Logo end -->
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div class="toggler-icon"></div>
+                    <div class="toggler-icon"></div>
+                    <div class="toggler-icon">
+                        </d>
+                </button>
+                <!-- Menu Start -->
+                <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+                    <ul class="navbar-nav nav-menu me-auto">
+                        <li><a class="nav-link fw-bold text-gray me-lg-3 me-md-0" href="index.html">Home</a></li>
+                        <li><a class="nav-link fw-bold text-gray me-lg-3 me-md-0" href="movies.html">Movies</a></li>
+                        <li><a class="nav-link fw-bold text-gray me-lg-3 me-md-0" href="tv.html">Tv Shows</a></li>
+                        <li><a class="nav-link fw-bold text-gray me-lg-3 me-md-0" href="people.html">People</a></li>
+                        <li><a class="nav-link fw-bold text-gray me-lg-3 me-md-0" href="profile.html">Profile</a></li>
+                    </ul>
+                    <ul class=" navbar-nav nav-icon">
+                        <li><a href="search.html"><i class="fa-solid fa-magnifying-glass fs-4 pe-lg-4 pe-md-0"></i></a></li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="social-icon fa-brands fa-facebook mx-md-1 text-white fs-5"></i></a>
+                            <a href="https://www.linkedin.com/in/osama-atta-438797246" target="_blank"><i class="social-icon fa-brands fa-linkedin mx-md-1 text-white fs-5"></i></a>
+                            <a href="https://github.com/OsamaMohamedAtta" target="_blank"><i class="social-icon fa-brands fa-github mx-md-1 text-white fs-5"></i></a>
+                        </li>
+                        <li class="px-lg-4 fw-bold d-inline-block"><a href="login.html">Login</a> </li>
+                    </ul>
+                </div>
+                <!-- Menu end -->
+            </div>
+        </nav>
+    </header>
+    <!-- Header area end -->
+
+    <!-- loginForm area start -->
+    <section class="main-color login-section d-flex justify-content-center align-items-center w-100 h-100 position-fixed">
+        <div class="container">
+            <div class="row">
+                <div class="m-auto col-lg-9">
+                    <div class="login-title text-white mb-4">
+                        <h1>Loging Form</h1>
+                    </div>
+                </div>
+                <div class="m-auto col-lg-9">
+                    <div class="login-form">
+                        <div class="alert alert-danger d-none" role="alert"></div>
+                        <label class="text-white my-3" for="email">email:</label>
+                        <input type="email" class="form-control emailLoginInput mb-1" id="email">
+                        <p class="email-login-error"></p>
+                    </div>
+                </div>
+                <div class="m-auto col-lg-9">
+                    <div class="login-form">
+                        <label class="text-white my-3" for="passwordLoginInput">password:</label>
+                        <input type="password" class="form-control mb-1" id="passwordLoginInput">
+                        <p class="password-login-error"></p>
+                    </div>
+                </div>
+                <div class="m-auto col-lg-9">
+                    <div class="login-button mt-4">
+                        <button class="btn btn-info" id="loginBtn">Login</button>
+                    </div>
+                </div>
+                <div class="login-footer text-center text-white mt-4">
+                    <p>Don't have an account? <a href="register.html">Register</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- loginForm area end -->
+
+
+    <!-- bootstrap JS link -->
+    <script src="./js/bootstrap/bootstrap.min.js"></script>
+    <!-- fontawesome JS link -->
+    <script src="./js/fontawesome/all.min.js"></script>
+    <!-- jquery JS link -->
+    <script src="./js/jquery/jquery-1.12.4.min.js"></script>
+    <!-- decodeJwt JS link -->
+    <script src="./js/decodeJwt/decodeJwt.js"></script>
+    <!-- main JS link -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

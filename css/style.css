@@ -1,0 +1,382 @@
+/* CSS Content
+---------------- */
+/* 01-tags Style */
+/* 02-reusable classes */
+/* 03-loader section Style */
+/* 04-navBar Style */
+/* 05-home section Style */
+/* 06-home skeleton loaded */
+/* 07-login form Style */
+/* 08-register form Style */
+/* 09-details section Style */
+/* 10-details skeleton loaded */
+/* 11-movie section style */
+/* 12-pagination style */
+/* 12-search section style */
+/* 13-profile section style */
+/* ------------------------------------------- */
+/* 01-tags Style
+------------------------- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #263B72;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+/* 02-reusable classes
+-------------------------  */
+.main-color{
+    background-color: #131722;
+}
+.text-white{
+    color: #fff !important;
+}
+.text-gray{
+    color: #949cb0 !important;
+}
+.skeleton{
+    animation: skeleton-loading 1s linear infinite alternate;  
+}
+@keyframes skeleton-loading {
+    0%{
+        background-color: hsl(200, 20%, 70%);
+    }
+    100%{
+        background-color: hsl(200, 20%, 95%);
+    }
+}
+.skeleton-img{
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+}
+.section-info{
+    margin-top: 3rem;
+}
+.img-poster{
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+.img-poster img{
+    transition: 0.5s;
+}
+.img-poster:hover img{
+    scale: 1.2;
+    transition: 0.5s;
+}
+.rate{
+    position: absolute;
+    top: 0;
+    right: -75px;
+    background-color: #17a2b8;
+    color: #fff;
+    padding: 0.2rem 0.3rem;
+    padding-right: 0.5rem;
+    border-bottom-left-radius: 5px;
+    transition: 0.5s;
+    z-index: 1111;
+}
+.img-poster:hover .rate{
+    right: 0px;
+}
+.poster-layer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0;
+    color: #0DCAF0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.img-poster:hover .poster-layer{
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.title{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.title:hover{
+    color:#f96167 !important;
+    transition: 0.5s;
+}
+/* 03-loader section Style
+------------------------- */
+.loader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 11111111;
+    display: flex;
+}
+.loader img{
+    width: 80px;
+    height: 77px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* 04-navBar Style
+-------------------------  */
+.navbar{
+    background-color: #263B72;
+    opacity: 0.8;
+    z-index: 9999;
+}
+.navbar-nav a{
+    font-size: 1.1rem;
+}
+.toggler-icon{
+    width: 25px;
+    height: 2px;
+    margin: 0.4rem 0rem;
+    background-color: #949cb0;
+}
+.nav-icon li:nth-child(1) a{
+    color: #17a2b8;
+    cursor: pointer;
+}
+.nav-menu li a
+,.fa-facebook
+,.fa-linkedin
+,.fa-github{
+    transition: 0.5s;
+}
+.nav-menu li a:hover
+,.fa-facebook:hover
+,.fa-linkedin:hover
+,.fa-github:hover{
+    color: #17a2b8 !important;
+    transition: 0.5s;
+}
+.nav-icon li:nth-child(3) a,
+.nav-icon li:nth-child(4) span{
+    font-size: 1.1rem;
+    color: #0DCAF0;
+    cursor: pointer;
+}
+.nav-icon li:nth-child(4) .arrow{
+    transition: 0.5s;
+}
+.nav-icon li:nth-child(4):hover .arrow{
+    color: #17a2b8 !important;
+    transition: 0.5s;
+}
+.active{
+    color: #17a2b8 !important;
+}
+/* 05-home section Style 
+------------------------- */
+.home-section{
+    padding: 6rem 0rem;
+}
+.section-home-title{
+    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+.section-home-title::before{
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 1px;
+    left: 0;
+    top: 0;
+    background-color: #949cb0;
+}
+.section-home-title{
+    border-bottom: solid 1px #949cb0;
+    margin-top: 4.5rem;
+}
+.section-home-title h2{
+    color: #fff;
+    margin: 0.8rem 0rem;
+    font-weight: bold;
+}
+/* 06-home skeleton loaded 
+------------------------- */
+.skeleton-home-title,
+.skeleton-title-large,
+.skeleton-title-large2{
+    width: 200px !important;
+    height: 25px;
+    border-radius: 5px;
+}
+.skeleton-title-large{
+    width: 250px !important;
+}
+.skeleton-title-large2{
+    width: 280px !important;
+}
+.skeleton-img-trending,
+.skeleton-img-media{  /* skeleton-img-media class is for movies,tv and people page skeleton loaded */
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+.skeleton-title{
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+}
+/* 07-login form Style
+------------------------- */
+.login-footer a{
+    color: #0DCAF0;
+}
+.login-form p{
+    color: rgb(255, 0, 0);
+}
+/* 08-register form Style
+------------------------- */
+.register-section{
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+.register-form p{
+    color: rgb(255, 0, 0);
+}
+.register-footer a{
+    color: #0DCAF0;
+}
+/* 09-details section Style
+------------------------- */
+.details-section{
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+}
+.img-details-poster img{
+    border-radius: 20px;
+}
+.genres{
+    background-color: #17a2b8;
+    color: #fff;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+.language{
+    color: #FFC107;
+}
+.vote-details span{
+    color: #198754;
+}
+.vote-count-details span{
+    color: #0DCAF0;
+}
+/* 10-details skeleton loaded */
+/* ------------------------------ */
+.skeleton-img-details{
+    width: 100%;
+    height: 550px;
+    border-radius: 20px;
+}
+.skeleton-h2{
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+}
+.skeleton-span{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+}
+.skeleton-language{
+    width: 40px;
+    height: 25px;
+    border-radius: 5px;
+}
+.skeleton-released,
+.skeleton-vate,
+.skeleton-overview{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}
+.skeleton-overview-line1,
+.skeleton-overview-line2,
+.skeleton-overview-line3{
+    width: 90%;
+    height: 25px;
+    border-radius: 5px;
+}
+.skeleton-overview-line3{
+    width: 60%;
+}
+/* 11-movie section style
+------------------------- */
+.media-section{
+    padding: 6rem 0rem;
+}
+/* 12-pagination style
+------------------------- */
+.px-paginate-container .px-btn, .px-paginate-container .px-points {
+    background: transparent;
+    color: #fff;
+    display: block;
+}
+.px-paginate-container .px-btn:last-child, .px-paginate-container .px-points:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.px-paginate-container .px-btn:first-child, .px-paginate-container .px-points:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.px-paginate-container .px-btn.selected {
+    color: #131722;
+    background-color: #dc3545;
+}
+.px-paginate-container .px-btn:hover {
+    background: #dc3545;
+}
+.skeleton-pagination{
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+}
+/* 12-search section style
+------------------------- */
+.serach-section{
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+    width: 100%;
+    height: 100%;
+}
+.skeleton-img-search{
+    width: 100%;
+    height: 380px;
+}
+/* 13-profile section style
+------------------------- */
+.profile-section{
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+.profile-info span{
+    color: #0DCAF0;
+}

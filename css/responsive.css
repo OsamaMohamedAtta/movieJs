@@ -1,0 +1,35 @@
+/* for medium device */
+@media (max-width: 991px) {
+    .nav-menu li:nth-child(1){
+        margin-top: 0.5rem;
+    }
+    .nav-icon li:nth-child(1),
+    .nav-icon li:nth-child(3){
+        margin: 0.5rem 0rem;
+    }
+    .social-icon{
+        margin-left: 0.5rem;
+    }
+    .fa-facebook{
+        margin-left: 0rem;
+    }
+    .skeleton-img-search{
+        height: 320px !important;
+    }
+}
+/* for small device */
+@media (max-width: 767px) {
+    .skeleton-img-trending,
+    .skeleton-img-media{
+        height: 550px !important;
+    }
+    .skeleton-img,
+    .skeleton-img-search{
+        height: 520px !important;
+    }
+    .myPages{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: auto;
+    }
+}
